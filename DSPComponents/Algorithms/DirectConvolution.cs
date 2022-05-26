@@ -33,6 +33,11 @@ namespace DSPAlgorithms.Algorithms
 
             int size = InputSignal2.Samples.Count;
             int windowSize= InputSignal1.Samples.Count;
+           /* if(InputSignal1.Samples.Last()==0)
+            {
+                InputSignal1.Samples.RemoveAt(windowSize);
+               // InputSignal1.SamplesIndices.RemoveAt(windowSize);
+            }*/
             Dictionary<int, int> d1 = new Dictionary<int, int>();
             setSample_index(d1, InputSignal2.SamplesIndices);
         
